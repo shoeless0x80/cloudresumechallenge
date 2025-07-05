@@ -8,5 +8,9 @@ resource "aws_dynamodb_table" "visits" {
     type = "S"
   }
 
+  server_side_encryption {
+    enabled = true
+  }
+
   tags = var.common_tags
 }

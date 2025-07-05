@@ -50,4 +50,7 @@ resource "aws_lambda_permission" "apigw" {
   action        = "lambda:InvokeFunction"
   function_name = aws_lambda_function.visitor.function_name
   principal     = "apigateway.amazonaws.com"
+
+  # only allow calls from our prod stage
+  source_arn = "${aws_api_gateway_rest_api.api.execution_arn}/*/*"
 }
