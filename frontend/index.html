@@ -2,88 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shawn Banta | Cloud Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shawn Banta — Cloud Security Engineer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Resume -->
-  <header>
+  <header class="header">
     <h1>Shawn Banta</h1>
-    <p>Cloud Security Engineer</p>
-    <p><a href="mailto:you@yourdomain.com">you@yourdomain.com</a> • Portland, OR</p>
+    <p class="role">Cloud Security Engineer</p>
+    <p class="contact">
+      Portland, OR •
+      <a href="mailto:shawnbanta@example.com">shawnbanta@example.com</a> •
+      <a href="https://www.linkedin.com/in/theshawnbanta/" target="_blank">LinkedIn</a>
+    </p>
   </header>
 
-  <section id="resume">
+  <main>
     <!-- Summary -->
-    <div class="resume-section">
+    <section class="section summary">
       <h2>Summary</h2>
       <p>
-        Cloud Security Engineer with 10+ years in IT, specializing in cloud security, red-teaming, networking, and Infrastructure as Code. 
-        Passionate about automating secure environments using Terraform, Python, and AWS services.
+        Experienced Cloud Security Engineer specializing in AWS security architecture, vulnerability management,
+        red teaming, and Infrastructure as Code. Proven track record of designing and automating security
+        processes to protect critical environments at scale.
       </p>
-    </div>
+    </section>
 
     <!-- Experience -->
-    <div class="resume-section">
+    <section class="section experience">
       <h2>Experience</h2>
-      <div class="job">
-        <h3>Cloud Security Engineer<br/><span class="company">[Your Current Employer]</span></h3>
-        <p class="dates">2022 – Present</p>
+
+      <article class="job">
+        <h3>Cloud Security Engineer, Benchling</h3>
+        <p class="meta">Feb 2023 – Present (Remote, Oregon)</p>
         <ul>
-          <li>Design and implement secure AWS/GCP architectures.</li>
-          <li>Built Terraform modules to automate multi-account guardrails and IAM controls.</li>
-          <li>Integrated security checks into CI/CD pipelines (GitHub Actions).</li>
-          <li>Led red-team exercises against Kubernetes/EKS workloads.</li>
+          <li>Built and automated a cloud vulnerability management process using AWS-native tools.</li>
+          <li>Led production access hardening with an auditable, approval-based emergency access process.</li>
+          <li>Deployed & operationalized a CSPM solution to integrate findings into security workflows.</li>
+          <li>Performed security reviews of cloud integrations to minimize risk.</li>
         </ul>
-      </div>
-      <!-- …other jobs… -->
-    </div>
+      </article>
+
+      <article class="job">
+        <h3>Enterprise Security Engineer</h3>
+        <p class="meta">Oct 2021 – Feb 2023 (San Francisco Bay Area)</p>
+        <ul>
+          <li>Founding security engineer—designed and secured IT infrastructure from the ground up.</li>
+          <li>Implemented email security best practices and DMARC policies.</li>
+          <li>Co-developed supplier security program for third-party risk management.</li>
+          <li>Hardened Okta identity configurations and integrated secure VDI access.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Offensive Security Engineer, Salesforce</h3>
+        <p class="meta">Nov 2020 – Oct 2021 (Hybrid, SF Bay Area)</p>
+        <ul>
+          <li>Conducted red teaming and adversarial simulations across Salesforce environments.</li>
+          <li>Built C2 infrastructure for advanced adversary emulation.</li>
+          <li>Developed exploit chains & attack narratives to demonstrate business impact.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Enterprise Security Engineer</h3>
+        <p class="meta">Nov 2019 – Nov 2020 (Hybrid)</p>
+        <ul>
+          <li>Led data center migration with segmented network & auth architecture.</li>
+          <li>Embedded security in all cloud decisions via the Cloud Center of Excellence.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Enterprise Security Engineer</h3>
+        <p class="meta">Mar 2018 – Nov 2019</p>
+        <ul>
+          <li>Performed infrastructure security assessments and architecture reviews.</li>
+          <li>Integrated security into development lifecycles & defined technical standards.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Information Security Engineer, Rally Health</h3>
+        <p class="meta">Aug 2016 – Mar 2018 (Hybrid, SF Bay Area)</p>
+        <ul>
+          <li>Led AWS environment security uplifts and compliance (HIPAA, SOC 2).</li>
+          <li>Integrated vulnerability scanning into CI/CD pipelines.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Information Security Engineer, Vantiv</h3>
+        <p class="meta">Sep 2014 – Aug 2016 (Cincinnati, OH)</p>
+        <ul>
+          <li>Enhanced enterprise security controls and drove compliance improvements.</li>
+          <li>Mentored security analysts and led knowledge-sharing sessions.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Information Security Engineer II</h3>
+        <p class="meta">Mar 2014 – Sep 2014</p>
+        <ul>
+          <li>Managed AV, FIM, proxy solutions for 10k+ endpoints.</li>
+          <li>Tuned detection systems to optimize analyst workflows.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Information Systems Client Administrator, Fischer Homes</h3>
+        <p class="meta">Nov 2012 – Mar 2014 (On-site, KY)</p>
+        <ul>
+          <li>Maintained server backups, VPN, LAN configurations, and IDS monitoring.</li>
+          <li>Provided technical support to 300+ users across four states.</li>
+        </ul>
+      </article>
+    </section>
 
     <!-- Education -->
-    <div class="resume-section">
+    <section class="section education">
       <h2>Education</h2>
-      <p><strong>B.S. in Computer Science</strong><br/>[Your University], [Year]</p>
-    </div>
+      <ul>
+        <li><strong>Master of Science, Cybersecurity & Information Assurance</strong><br/>Western Governors University (2019 – 2020)</li>
+        <li><strong>Bachelor of Science, Computer Information Technology</strong><br/>Northern Kentucky University (2007 – 2013)<br/>Tau Kappa Epsilon, CCDC Team</li>
+      </ul>
+    </section>
 
     <!-- Certifications -->
-    <div class="resume-section">
-      <h2>Certifications</h2>
+    <section class="section certifications">
+      <h2>Licenses & Certifications</h2>
       <ul>
-        <li>AWS Certified Cloud Practitioner</li>
-        <li>AWS Certified Security – Specialty (in progress)</li>
+        <li>Mastering Container Security v4 – Black Hat (Dec 2020)</li>
+        <li>Advanced Infrastructure Hacking – Black Hat (Aug 2020)</li>
+        <li>OSCE, OSWP, OSCP – OffSec (2018 – 2019)</li>
+        <li>CCSK – Cloud Security Alliance (Jul 2017)</li>
+        <li>CEHv8 – EC-Council (Aug 2015)</li>
+        <li>Qualys Vulnerability Mgmt Specialist (Mar 2015)</li>
+        <li>Terraform Associate – HashiCorp (2021)</li>
+        <li>GWAPT, GCIH, GSEC – GIAC (2014 – 2017)</li>
+        <li>SSCP, CISSP – ISC2 (2015 – 2017)</li>
+        <li>A+, Network+, Security+ – CompTIA (2013 – 2014)</li>
+        <li>AWS Dev, Solutions, SysOps Associate – AWS (2016 – 2017)</li>
+        <li>CCENT – Cisco (2014)</li>
       </ul>
-    </div>
+    </section>
+  </main>
 
-    <!-- Skills -->
-    <div class="resume-section">
-      <h2>Technical Skills</h2>
-      <ul class="skills">
-        <li>AWS, GCP, Terraform, GitHub Actions</li>
-        <li>Python, JavaScript, Bash</li>
-        <li>Docker, Kubernetes</li>
-        <li>CSPM, Red Teaming, Logging & Monitoring</li>
-      </ul>
-    </div>
-
-    <!-- Projects -->
-    <div class="resume-section">
-      <h2>Selected Projects</h2>
-      <ul>
-        <li><strong>Cloud Resume Challenge</strong> – Hosted my resume + visitor counter on S3/CloudFront with Terraform & DynamoDB.</li>
-        <li><strong>CSPM Reporter</strong> – Python tool to aggregate security findings into Slack summaries.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Visitor Counter -->
-  <section id="counter">
-    <h2>Visitor Count:</h2>
+  <footer class="footer">
+    <h2>Visitor Count</h2>
     <div id="visits">Loading…</div>
-  </section>
+  </footer>
 
-  <!-- Load the counter script -->
   <script src="script.js"></script>
 </body>
 </html>
