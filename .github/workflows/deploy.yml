@@ -1,3 +1,4 @@
+# .github/workflows/deploy.yml
 name: Deploy Resume & API
 
 on:
@@ -13,6 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Package Lambda
+        # This creates terraform/lambda_function.zip from your lambda/ folder
+        run: |
+          zip -j terraform/lambda_function.zip lambda/lambda_function.py
+
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v2
         with:
@@ -24,7 +30,7 @@ jobs:
           terraform init
           terraform apply -auto-approve
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
   frontend_deploy:
@@ -37,9 +43,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region:           ${{ secrets.AWS_REGION }}
 
       - name: Sync to S3
         run: |
