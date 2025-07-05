@@ -1,154 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shawn Banta — Cloud Security Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="header">
-    <h1>Shawn Banta</h1>
-    <p class="role">Cloud Security Engineer</p>
-    <p class="contact">
-      Portland, OR •
-      <a href="mailto:shawnbanta@example.com">shawnbanta@example.com</a> •
-      <a href="https://www.linkedin.com/in/theshawnbanta/" target="_blank">LinkedIn</a>
-    </p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shawn Banta | Cloud Security Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Shawn Banta</h1>
+        <p class="subtitle">Cloud Security Engineer</p>
+        <p class="contact">Portland, OR • <a href="mailto:shawnbanta@example.com">shawnbanta@example.com</a> • <a href="https://www.linkedin.com/in/theshawnbanta/" target="_blank">LinkedIn</a> • <a href="resume.pdf" download>Download PDF</a></p>
+      </header>
 
-  <main>
-    <!-- Summary -->
-    <section class="section summary">
-      <h2>Summary</h2>
-      <p>
-        Cloud Security Engineer with over a decade of experience in securing cloud and enterprise infrastructure. Expert in AWS security architecture, red teaming, vulnerability management, and infrastructure as code (Terraform). Passionate about automating security controls and embedding security into DevOps processes.
-      </p>
-    </section>
+      <nav class="tabs">
+        <button class="tab active" data-tab="resume">Resume</button>
+        <button class="tab" data-tab="blog">Blog</button>
+      </nav>
 
-    <!-- Experience -->
-    <section class="section experience">
-      <h2>Professional Experience</h2>
+      <main>
+        <section id="resume" class="tab-content active">
+          <section class="summary">
+            <h2>Summary</h2>
+            <p>Experienced Cloud Security Engineer specializing in AWS security architecture, vulnerability management, red teaming, and Infrastructure as Code. Proven track record of designing and automating security processes to protect critical environments at scale.</p>
+          </section>
 
-      <article class="job">
-        <h3>Cloud Security Engineer, Benchling</h3>
-        <p class="meta">Feb 2023 – Present &bull; Remote (Oregon)</p>
-        <ul>
-          <li>Automated cloud vulnerability management using AWS-native tools and serverless pipelines.</li>
-          <li>Built an emergency access system with auditable approval workflows.</li>
-          <li>Operationalized CSPM toolchain; integrated findings into Jira-based ticketing flow.</li>
-          <li>Conducted in-depth security reviews of new SaaS and infrastructure integrations.</li>
-        </ul>
-      </article>
+          <section class="experience">
+            <h2>Experience</h2>
 
-      <article class="job">
-        <h3>Enterprise Security Engineer</h3>
-        <p class="meta">Oct 2021 – Feb 2023 &bull; San Francisco Bay Area</p>
-        <ul>
-          <li>Built security from the ground up as a founding engineer in a fast-paced startup.</li>
-          <li>Deployed phishing-resistant authentication and implemented DMARC/DKIM standards.</li>
-          <li>Launched vendor security review workflows and contract risk review process.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Cloud Security Engineer, Benchling</h3>
+              <p class="meta">Feb 2023 – Present · Oregon · Remote</p>
+              <ul>
+                <li>Built and automated a cloud vulnerability management process leveraging AWS-native tools and automation pipelines to streamline detection, triage, and remediation.</li>
+                <li>Led the design and implementation of an auditable, approval-based emergency access workflow to eliminate persistent production access.</li>
+                <li>Deployed and operationalized a CSPM platform with integration into ticketing and security workflows for rapid remediation.</li>
+                <li>Conducted security reviews of cloud-native features and third-party integrations to reduce risk and ensure best practice adherence.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Senior Offensive Security Engineer, Salesforce</h3>
-        <p class="meta">Nov 2020 – Oct 2021 &bull; Hybrid (SF Bay Area)</p>
-        <ul>
-          <li>Led red team operations and adversary emulations across critical environments.</li>
-          <li>Built hardened C2 infrastructure and executed end-to-end exploit simulations.</li>
-          <li>Produced executive-impact attack narratives aligned with MITRE ATT&CK.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Enterprise Security Engineer</h3>
+              <p class="meta">Oct 2021 – Feb 2023 · San Francisco Bay Area</p>
+              <ul>
+                <li>Designed and secured corporate IT infrastructure as the founding enterprise security engineer.</li>
+                <li>Implemented email security enhancements including DMARC enforcement and SPF/DKIM alignment.</li>
+                <li>Developed and launched a supplier risk assessment program with measurable controls and onboarding processes.</li>
+                <li>Hardened Okta and AWS Workspaces identity configurations to support a secure, scalable VDI environment.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Senior Enterprise Security Engineer</h3>
-        <p class="meta">Nov 2019 – Nov 2020</p>
-        <ul>
-          <li>Led cloud infrastructure security during a major data center migration.</li>
-          <li>Established cloud architecture guardrails via the Cloud Center of Excellence.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Senior Offensive Security Engineer, Salesforce</h3>
+              <p class="meta">Nov 2020 – Oct 2021 · Hybrid</p>
+              <ul>
+                <li>Led red teaming and adversarial simulations targeting Salesforce production and corporate environments.</li>
+                <li>Built robust C2 infrastructure to emulate advanced persistent threats and validate detection mechanisms.</li>
+                <li>Crafted detailed attack narratives and exploit chains to demonstrate high-impact vulnerabilities.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Enterprise Security Engineer</h3>
-        <p class="meta">Mar 2018 – Nov 2019</p>
-        <ul>
-          <li>Conducted architecture reviews and threat modeling for infrastructure projects.</li>
-          <li>Wrote technical security standards and integrated them into CI/CD pipelines.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Senior Enterprise Security Engineer</h3>
+              <p class="meta">Nov 2019 – Nov 2020 · Hybrid</p>
+              <ul>
+                <li>Architected and executed a secure enterprise data center migration aligned with data classification policies.</li>
+                <li>Advised the Cloud Center of Excellence, integrating security design patterns into global cloud strategy.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Information Security Engineer, Rally Health</h3>
-        <p class="meta">Aug 2016 – Mar 2018 &bull; Hybrid (SF Bay Area)</p>
-        <ul>
-          <li>Led HIPAA and SOC 2 compliance efforts for AWS-based environments.</li>
-          <li>Integrated container scanning and secrets detection into deployment processes.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Enterprise Security Engineer</h3>
+              <p class="meta">Mar 2018 – Nov 2019</p>
+              <ul>
+                <li>Performed deep-dive infrastructure assessments and developed threat models to guide remediation.</li>
+                <li>Enabled security-by-design practices within DevOps teams through secure SDLC consulting.</li>
+                <li>Researched emerging threats to inform architectural hardening and detection priorities.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Senior Information Security Engineer, Vantiv</h3>
-        <p class="meta">Sep 2014 – Aug 2016 &bull; Cincinnati, OH</p>
-        <ul>
-          <li>Drove PCI-DSS compliance upgrades and endpoint security enhancements.</li>
-          <li>Built and maintained security operations documentation and playbooks.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Information Security Engineer, Rally Health</h3>
+              <p class="meta">Aug 2016 – Mar 2018 · Hybrid · San Francisco Bay Area</p>
+              <ul>
+                <li>Led cloud environment security hardening and compliance readiness initiatives (HIPAA, SOC 2).</li>
+                <li>Built vulnerability scanning automation into CI/CD workflows across internal teams.</li>
+                <li>Launched TLS decryption and DLP coverage to improve security visibility and response.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>Information Security Engineer II</h3>
-        <p class="meta">Mar 2014 – Sep 2014</p>
-        <ul>
-          <li>Oversaw AV, FIM, proxy, and SIEM for 10,000+ assets.</li>
-          <li>Worked with SOC teams to tune detection logic for actionable alerts.</li>
-        </ul>
-      </article>
+            <article>
+              <h3>Senior Information Security Engineer, Vantiv</h3>
+              <p class="meta">Sep 2014 – Aug 2016 · Cincinnati, OH · Hybrid</p>
+              <ul>
+                <li>Developed and deployed enterprise-wide security standards, improving audit outcomes and compliance posture.</li>
+                <li>Mentored junior engineers and analysts, scaling team expertise and capabilities.</li>
+              </ul>
+            </article>
 
-      <article class="job">
-        <h3>IS Client Administrator, Fischer Homes</h3>
-        <p class="meta">Nov 2012 – Mar 2014 &bull; On-site (KY)</p>
-        <ul>
-          <li>Supported over 300 users; maintained VPN, backups, and LAN equipment.</li>
-          <li>Monitored IDS and log systems; responded to escalated IT issues.</li>
-        </ul>
-      </article>
-    </section>
+            <article>
+              <h3>Information Security Engineer II</h3>
+              <p class="meta">Mar 2014 – Sep 2014</p>
+              <ul>
+                <li>Managed endpoint security tooling for 10,000+ devices, improving detection precision and analyst efficiency.</li>
+                <li>Served as internal advocate for secure practices and trained technical teams on detection logic improvements.</li>
+              </ul>
+            </article>
 
-    <!-- Education -->
-    <section class="section education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MS, Cybersecurity & Information Assurance</strong><br/>Western Governors University (2019 – 2020)</li>
-        <li><strong>BS, Computer Information Technology</strong><br/>Northern Kentucky University (2007 – 2013)<br/>Tau Kappa Epsilon, CCDC Team</li>
-      </ul>
-    </section>
+            <article>
+              <h3>Information Systems Client Administrator, Fischer Homes</h3>
+              <p class="meta">Nov 2012 – Mar 2014 · Crestview Hills, KY · On-site</p>
+              <ul>
+                <li>Maintained uptime and security for IT infrastructure including backups, VPNs, and LAN switching.</li>
+                <li>Delivered high-quality support to a distributed user base across four states.</li>
+              </ul>
+            </article>
 
-    <!-- Certifications -->
-    <section class="section certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li>OSCE, OSWP, OSCP &mdash; OffSec</li>
-        <li>CISSP, SSCP &mdash; ISC2</li>
-        <li>GWAPT, GCIH, GSEC &mdash; GIAC</li>
-        <li>Terraform Associate &mdash; HashiCorp</li>
-        <li>CCSK &mdash; Cloud Security Alliance</li>
-        <li>AWS Dev/Solutions/SysOps Associate</li>
-        <li>Advanced Infra Hacking / Container Security v4 &mdash; Black Hat</li>
-        <li>CEHv8 &mdash; EC-Council</li>
-        <li>Security+, Network+, A+ &mdash; CompTIA</li>
-        <li>Qualys VM Specialist</li>
-        <li>CCENT &mdash; Cisco</li>
-      </ul>
-    </section>
-  </main>
+            <article>
+              <h3>IT Intern, Northern Kentucky Health Department</h3>
+              <p class="meta">Jun 2012 – Aug 2012 · Erlanger, KY · On-site</p>
+              <ul>
+                <li>Supported network operations, helped configure systems, and resolved technical issues across departments.</li>
+              </ul>
+            </article>
+          </section>
 
-  <footer class="footer">
-    <h2>Visitor Count</h2>
-    <div id="visits">Loading…</div>
-  </footer>
+          <section class="education">
+            <h2>Education</h2>
+            <ul>
+              <li><strong>Master of Science, Cybersecurity & Information Assurance</strong><br/>Western Governors University (2019 – 2020)</li>
+              <li><strong>Bachelor of Science, Computer Information Technology</strong><br/>Northern Kentucky University (2007 – 2013)<br/>Tau Kappa Epsilon, CCDC Team</li>
+            </ul>
+          </section>
 
-  <script src="script.js"></script>
-</body>
+          <section class="certifications">
+            <h2>Licenses & Certifications</h2>
+            <ul>
+              <li>AWS Solutions Architect, SysOps Admin, Developer Associate</li>
+              <li>Terraform Associate – HashiCorp</li>
+              <li>OSCP, OSWP, OSCE – OffSec</li>
+              <li>GCIH, GWAPT, GSEC – GIAC</li>
+              <li>CISSP, SSCP – ISC2</li>
+              <li>CCSK – Cloud Security Alliance</li>
+              <li>CEH v8 – EC-Council</li>
+              <li>CompTIA A+, Network+, Security+</li>
+              <li>CCENT – Cisco</li>
+              <li>Black Hat: Advanced Infrastructure Hacking, Mastering Container Security</li>
+            </ul>
+          </section>
+
+          <section class="footer">
+            <h2>Visitor Count</h2>
+            <div id="visits">Loading…</div>
+          </section>
+        </section>
+
+        <section id="blog" class="tab-content">
+          <h2>Blog</h2>
+          <p>Read my <a href="https://medium.com/@shawnbanta" target="_blank">latest post</a> on what I learned while building this resume site.</p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
