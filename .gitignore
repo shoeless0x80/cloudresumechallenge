@@ -1,0 +1,12 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate*
+terraform/lambda_function.zip
+
+# Node / build
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.DS_Store
