@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shawn Banta | Cloud Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Resume -->
+  <header>
+    <h1>Shawn Banta</h1>
+    <p>Cloud Security Engineer</p>
+    <p><a href="mailto:you@yourdomain.com">you@yourdomain.com</a> • Portland, OR</p>
+  </header>
+
+  <section id="resume">
+    <!-- Summary -->
+    <div class="resume-section">
+      <h2>Summary</h2>
+      <p>
+        Cloud Security Engineer with 10+ years in IT, specializing in cloud security, red-teaming, networking, and Infrastructure as Code. 
+        Passionate about automating secure environments using Terraform, Python, and AWS services.
+      </p>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-section">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Cloud Security Engineer<br/><span class="company">[Your Current Employer]</span></h3>
+        <p class="dates">2022 – Present</p>
+        <ul>
+          <li>Design and implement secure AWS/GCP architectures.</li>
+          <li>Built Terraform modules to automate multi-account guardrails and IAM controls.</li>
+          <li>Integrated security checks into CI/CD pipelines (GitHub Actions).</li>
+          <li>Led red-team exercises against Kubernetes/EKS workloads.</li>
+        </ul>
+      </div>
+      <!-- …other jobs… -->
+    </div>
+
+    <!-- Education -->
+    <div class="resume-section">
+      <h2>Education</h2>
+      <p><strong>B.S. in Computer Science</strong><br/>[Your University], [Year]</p>
+    </div>
+
+    <!-- Certifications -->
+    <div class="resume-section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>AWS Certified Security – Specialty (in progress)</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="resume-section">
+      <h2>Technical Skills</h2>
+      <ul class="skills">
+        <li>AWS, GCP, Terraform, GitHub Actions</li>
+        <li>Python, JavaScript, Bash</li>
+        <li>Docker, Kubernetes</li>
+        <li>CSPM, Red Teaming, Logging & Monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="resume-section">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li><strong>Cloud Resume Challenge</strong> – Hosted my resume + visitor counter on S3/CloudFront with Terraform & DynamoDB.</li>
+        <li><strong>CSPM Reporter</strong> – Python tool to aggregate security findings into Slack summaries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Visitor Counter -->
+  <section id="counter">
+    <h2>Visitor Count:</h2>
+    <div id="visits">Loading…</div>
+  </section>
+
+  <!-- Load the counter script -->
+  <script src="script.js"></script>
+</body>
+</html>
