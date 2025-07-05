@@ -9,13 +9,17 @@ jobs:
   terraform_deploy:
     name: Terraform (backend)
     runs-on: ubuntu-latest
-    env:
-      AWS_REGION: ${{ secrets.AWS_REGION }}
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure AWS credentials   # << add this
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id:     ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region:           ${{ secrets.AWS_REGION }}
+
       - name: Package Lambda
-        # This creates terraform/lambda_function.zip from your lambda/ folder
         run: |
           zip -j terraform/lambda_function.zip lambda/lambda_function.py
 
@@ -29,9 +33,6 @@ jobs:
         run: |
           terraform init
           terraform apply -auto-approve
-        env:
-          AWS_ACCESS_KEY_ID:     ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
   frontend_deploy:
     name: Sync Frontend & Invalidate CDN
