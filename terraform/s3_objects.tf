@@ -23,3 +23,11 @@ resource "aws_s3_object" "script" {
   source_hash  = filemd5("${path.module}/../frontend/script.js")
   content_type = "application/javascript"
 }
+
+resource "aws_s3_object" "resume" {
+  bucket       = aws_s3_bucket.site.id
+  key          = "resume.pdf"
+  source       = "${path.module}/../frontend/resume.pdf"
+  source_hash  = filemd5("${path.module}/../frontend/resume.pdf")
+  content_type = "application/pdf"
+}
